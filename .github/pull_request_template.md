@@ -7,7 +7,7 @@ Además, por favor incluye información relevante y el contexto.
 
 Por favor, marca según sea el caso:
 
-- [ ] Bug resuelto.
+- [ ] Bug fix.
 - [ ] Nueva funcionalidad (feature).
 - [ ] Cambio rotundo (fix o feature que causa que algo no funcione correctamente).
 - [ ] Actualización de documentación.
@@ -15,4 +15,4 @@ Por favor, marca según sea el caso:
 
 ## Comentario/Sugerencia
 
-Agrega comentario adicionales o sugerencias.
+Puedes agregar comentarios adicionales o sugerencias.
