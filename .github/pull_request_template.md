@@ -5,7 +5,7 @@ Además, por favor incluye información relevante y el contexto.
 
 ## Tipo de cambio
 
-Por favor, marca según sea el caso:
+Por favor, marca con "x" según sea el caso:
 
 - [ ] Bug fix.
 - [ ] Nueva funcionalidad (feature).
