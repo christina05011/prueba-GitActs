@@ -24,6 +24,6 @@ jobs:
       # Run collection with newman
       - name: Run Postman Tests with Delay
         run: |
-            newman run "32840101-d9e8d344-5082-47e8-92bb-7d392eae3cd5" --iteration-count 3 --delay-request 1000
+            newman run collection/Integration_testing.json --iteration-count 3 --delay-request 1000
       # Run newman with collection json and delay
       # newman run /collection/collection1.json --delay-request 1000
