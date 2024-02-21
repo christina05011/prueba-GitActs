@@ -7,6 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Install Newman
+        run: npm install -g newman
       - name: Install Postman CLI
         run: |
           curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
@@ -14,4 +20,10 @@ jobs:
         run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
       - name: Run API tests
         run: |
-          postman collection run "32840101-d9e8d344-5082-47e8-92bb-7d392eae3cd5"
+          postman collection run "32840101-d9e8d344-5082-47e8-92bb-7d392eae3cd5" --iteration-count 3
+      # Run collection with newman
+      - name: Run Postman Tests with Delay
+        run: |
+            newman run "32840101-d9e8d344-5082-47e8-92bb-7d392eae3cd5" --iteration-count 3
+      # Run newman with collection json and delay
+      # newman run /collection/collection1.json --delay-request 1000
