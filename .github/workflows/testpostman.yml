@@ -27,4 +27,3 @@ jobs:
             newman run collection/Integration_testing.json --iteration-count 3 --delay-request 1000
       # Run newman with collection json and delay
       # newman run /collection/collection1.json --delay-request 1000
-  
