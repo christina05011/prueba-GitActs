@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        parallel:  # Number of jobs parallel, different runnes execution.
+        parallel:  # Number of jobs parallel, different runners execution.
           - 1
           - 2
           - 3
