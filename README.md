@@ -1,3 +1,5 @@
+[![Automated API tests using Postman CLI](https://github.com/christina05011/prueba-GitActs/actions/workflows/testpostman.yml/badge.svg)](https://github.com/christina05011/prueba-GitActs/actions/workflows/testpostman.yml)
+
 This is my first test with Git Actions!!
 This is automatization!
 
